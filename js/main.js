@@ -10,11 +10,11 @@ $(document).ready(function() {
 //Prices section menu and submenu hover handler
 
 
-	$(".menu1").on("mouseenter", function() {
-		$(this).closest("nav").find(".dropdown").stop().slideDown("fast");
-	});
-
-	$(".dropdown").on("mouseleave", function() {
+	$(".menu1, .dropdown li").hover(
+		function() {
+		$(".dropdown").stop().slideDown("fast");
+	},
+		function() {
 		$(".dropdown").stop().slideUp("fast");
 	});
 
