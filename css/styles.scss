@@ -1,0 +1,298 @@
+/*FONTS DECLARATIONS*/
+
+$headline: 'Exo 2', sans-serif;
+$headingFont: Cambria;
+$copyFont: Arial;
+
+
+/*COLORS DECLARATIONS*/
+
+$white: #fff;
+$navRed: #b00000;
+$navHover: #6495ed;
+
+body {
+	background-color: $white;
+}
+.wrapper {
+	background-color: $white;
+	width: 857px;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+
+header, .headerlogo, .headerbackground {
+	height: 200px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font: {
+		family: $headline;
+		size: 200%;
+		style: italic;
+	}
+	color: $navRed;
+	top: 49px;
+	position: absolute;
+	text-shadow: 2px 2px #000;
+}
+
+.headerlogo {
+	background: {
+		image: url(../images/moto-a_logo.jpg);
+		repeat: no-repeat;
+		position: center center;
+	}
+	width: 200px;
+	float: left;
+}
+
+.headerbackground {
+	width: 656px;
+	float: left;
+	background: {
+		image: url(../images/header_logo_1.jpg);
+		position: center center;
+		size: 100%;
+		repeat: no-repeat;
+	}
+}
+
+.contactus {
+	float: left;
+	width: 193px;
+	height: 35px;
+	text-align: center;
+	background-color: #ff4500;
+	border-radius: 5px;
+	font-weight: bold;
+	line-height: 35px;
+	a {
+		color: #000;
+		height: 35px;
+	}
+	&:hover {
+		background-color: $navHover;
+	}
+}
+
+/*NAVBAR*/
+
+nav {
+	height: 35px;
+	li a {
+		display: block;
+		height: 35px;
+		color: $white;
+		line-height: 1.9;
+		font-size: 112%;
+	}
+	ul {
+		list-style: none;
+		float: left;
+		background-color: $navRed;
+		margin: 0 0 0 7px;
+		padding-left: 0;
+		li {
+			float: left;
+			padding: 0 16px;
+			border-right: 1px solid;
+			&:hover {
+				background-color: $navHover;
+			}
+			&:last-child {
+				border-right: none;
+			}	
+		}
+	}
+}
+
+/*DROPDOWN LIST*/
+.dropdown {
+	margin-left: -17px;
+	position: absolute;
+	z-index: 4;
+	display: none;
+	li {
+		float: none;
+		width: 161px;
+		border-right: none;
+		border-bottom: 1px solid #a8a8a8;
+		&:last-child {
+			height: 40px;
+			padding-top: 5px;
+			a {
+				line-height: 1;
+			}
+		}
+	}
+}
+
+
+.clear {
+	clear: both;
+}
+
+aside {
+	width: 193px;
+	float: left;
+	margin-top: 15px;
+}
+
+.vk_groups {
+	margin-bottom: 15px;
+}
+
+iframe {
+	padding-bottom: 10px;
+}
+
+article {
+	width: 656px;
+	float: right;
+	h2 {
+		font: {
+			family: $headingFont;
+			weight: bold;
+			size: 300%;
+		}
+		text-align: center;
+		margin-top: 15px;
+	}
+	h3 {
+		font: {
+			family: $headingFont;
+			size: 130%;
+		}
+		text-align: center;
+		margin: 10px 0 20px 0;
+	}
+	p {
+		text-align: justify;
+		line-height: 1.4;
+		font-family: $copyFont;
+		margin: 15px 0 15px 0;
+		padding: 0 5px 0 5px;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	ul {
+		line-height: 1.4;
+		li {
+			font-family: $copyFont;
+		}
+	}
+}
+
+.article_spots {
+	p {
+		font-size: 14px;
+	}
+}
+
+.article_secondStep {
+	img {
+		display: inline-block;
+	}
+}
+
+.yandexMaps {
+	width: 600px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.spotsLeftColumn {
+	float: left;
+	width: 328px;
+	text-align: center;
+}
+
+.spotsRightColumn {
+	text-align: center;
+	width: 328px;
+	float: right;
+	p {
+		padding-right: 27px;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.article_FAQ {
+	p {
+		background-color: #f1f1f1;
+	}
+}
+
+footer {
+	background-color: $navHover;
+	padding: 5px;
+	p {
+		margin: 0;
+	}
+}
+
+.article_motogymkhana li:last-child {
+	padding-bottom: 20px;
+}
+
+#modal_form {
+	width: 500px;
+	height: 220px;
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: $white;
+	position: fixed;
+	top: 45%; 
+	left: 50%; 
+	margin-top: -150px;
+	margin-left: -150px;
+	display: none;
+	opacity: 0; /*прозрачно для анимирования*/
+	z-index: 5; 
+	padding: 20px 10px;
+	h3 {
+		padding-bottom: 10px;
+		font-weight: bold;
+		text-align: center;
+	}
+	input {
+		display: block;
+		margin-bottom: 10px;
+	}
+	form {
+		margin-left: 30px;
+	}
+}
+
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+
+#overlay {
+	background-color: #000;
+	z-index: 3;
+	position: fixed;
+	opacity: 0.8;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0; 
+	display: none;
+}
