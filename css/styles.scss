@@ -96,7 +96,7 @@ nav {
 		list-style: none;
 		float: left;
 		background-color: $navRed;
-		margin: 0 0 0 7px;
+		margin: 0 0 0 5px;
 		padding-left: 0;
 		li {
 			float: left;
@@ -191,6 +191,24 @@ article {
 	}
 }
 
+/*PROGRAM SELECT HELPER*/
+
+#filters {
+	margin-left: 164.25px;
+	list-style: none;
+	
+
+	li {
+		float: left;
+
+	}
+}
+
+
+
+
+
+
 .article_spots {
 	p {
 		font-size: 14px;
@@ -228,7 +246,7 @@ article {
 	display: none;
 }
 
-.article_FAQ {
+.article_FAQ, .article_adlessons {
 	p {
 		background-color: #f1f1f1;
 	}

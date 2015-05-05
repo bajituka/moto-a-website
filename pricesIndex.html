@@ -26,11 +26,11 @@
 					<li><a class="menu1" href="prices.html">Программы и цены</a>
 						<ul class="dropdown">
 							<li><a href="openLesson.html">Открытый урок</a></li>
-							<li><a href="firstStep.html">Шаг первый</a></li>
-							<li><a href="secondStep.html">Шаг второй</a></li>
+							<li><a href="firstStep.html">"Начальный"</a></li>
+							<li><a href="secondStep.html">"Продвинутый"</a></li>
 							<li><a href="additionalLessons.html">Дополнительные курсы</a></li>
 						</ul>
-						</li>
+					</li>
 					<li><a href="spots.html">Площадки</a></li>
 					<li><a href="motogymkhana.html">Мотоджимхана</a></li>
 					<li><a href="FAQ.html">ЧАВО</a></li>
@@ -51,25 +51,63 @@
 					<iframe width="193" height="auto" src="https://www.youtube.com/embed/PRGRT-N1ST8" frameborder="0" allowfullscreen></iframe>
 				</aside>
 
-				<article class="article_adlessons">
-				<h2>Дополнительные курсы</h2>
-					<p>"Продвинутый" курс - подготовка к городу, вождение мотоцикла в дорожных ситуациях. Курс доступен после освоения программы "Начального" курса.</br>
-					Продолжительность: 4 часа</br>
-					Цена: 3 600 рублей</p>
-					<p>"Лёгкий" курс - ознакомительное управление тяжёлым мотоциклом Honda CB400. После освоения программ "Начального" или "Продвинутого" курсов.</br>
-					Продолжительность: 2 часа</br>
-					Цена: 2 400 рублей</p>
-					<p>"Городской" курс - вождение мотоцикла(учебного или своего) в городе с инструктором(инструктор едет на своем мотоцикле/машине). Отработка тактик безопасного вождения.</br>
-					Продолжительность: 6 часов(3 занятия по 2 часа).</br>
-					Цена: 9 000 рублей</p>
-					<p>"Экстремальный" курс - поведение в случаях потери управления мотоциклистом. Отработка блокировок переднего, заднего колёс. Сносы переднего и заднего колеса в поворотах. Преодоление препятствий. Контакты с машиной в плотном потоке. Курс доступен в полной экипировке ученика.</br>
-					Продолжительность: 2 часа.</br>
-					Цена: 4 000 рублей</p>
-					<p>"Внедорожный" курс - техника управления на грунте специфична и владение ею доставляет не малое удовольствие! Идёт как отдельный курс! Можно брать начинающим!</br>
-					Продолжительность: 9 часов.</br>
-					Цена: 11 500 рублей</br>
-					Есть возможность заниматься 1-2 часа. Звоните!</p>
-					</article>
+				<article class="pricesIndex">
+
+					
+					<ul id="filters">
+						<li><button class="newbie">Я новичок</button></li>
+						<li><button class="hasLicense">У меня есть ВУ "А"</button></li>
+					</ul>
+					
+
+					<ul>
+						<li class="program newbie">
+							<h3>Открытый урок</h3>
+							<p>Бесплатно</p>
+							<a href="openLesson.html"><button type="btn">Подробнее</button></a>
+						</li>
+
+						<li class="program newbie">
+							<h3>"Начальный"</h3>
+							<p>20 000 р.</p>
+							<a href="firstStep.html"><button type="btn">Подробнее</button></a>
+						</li>
+
+						<li class="program hasLicense">
+							<h3>"Продвинутый"</h3>
+							<p>6 000 р.</p>
+							<a href="secondStep.html"><button type="btn">Подробнее</button></a>
+						</li>
+
+						<li class="program hasLicense">
+							<h3>"Легкий"</h3>
+							<p>2 400 р.</p>
+							<a href="additionalLessons.html"><button type="btn">Подробнее</button></a>
+						</li>
+
+						<li class="program hasLicense">
+							<h3>"Городской"</h3>
+							<p>9 000 р.</p>
+							<a href="additionalLessons.html"><button type="btn">Подробнее</button></a>
+						</li>
+
+						<li class="program hasLicense">
+							<h3>"Экстремальный"</h3>
+							<p>4 000 р.</p>
+							<a href="additionalLessons.html"><button type="btn">Подробнее</button></a>
+						</li>
+
+						<li class="program newbie">
+							<h3>"Внедорожный"</h3>
+							<p>11 500 р.</p>
+							<a href="additionalLessons.html"><button type="btn">Подробнее</button></a>
+						</li>
+					</ul>
+
+
+
+
+				</article>
 
 				</section>
 				<div class="clear">
@@ -88,5 +126,17 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <div id="modal_form">
+        	<span id="modal_close">X</span>
+        	<h3>Заполните форму, и мы вам перезвоним!</h3>
+        	<form>
+        		<label for="modal_name">Имя</label>
+        		<input type="text" id="modal_name" required>
+        		<label for="phone_number">Телефон</label>
+        		<input type="text" id="phone_number" placeholder="+78123332211" required>
+        		<input type="submit" value="Отправить">
+        	</form>
+        </div>
+        <div id="overlay"></div>
 			</body>
 			</html>

@@ -68,7 +68,7 @@ nav {
     list-style: none;
     float: left;
     background-color: #b00000;
-    margin: 0 0 0 7px;
+    margin: 0 0 0 5px;
     padding-left: 0; }
     nav ul li {
       float: left;
@@ -138,6 +138,13 @@ article {
     article ul li {
       font-family: Arial; }
 
+/*PROGRAM SELECT HELPER*/
+#filters {
+  margin-left: 164.25px;
+  list-style: none; }
+  #filters li {
+    float: left; }
+
 .article_spots p {
   font-size: 14px; }
 
@@ -164,7 +171,7 @@ article {
 .hidden {
   display: none; }
 
-.article_FAQ p {
+.article_FAQ p, .article_adlessons p {
   background-color: #f1f1f1; }
 
 footer {
